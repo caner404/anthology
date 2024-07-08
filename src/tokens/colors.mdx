@@ -1,0 +1,11 @@
+import colors from 'tailwindcss/colors';
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+
+<ColorPalette>
+  {Object.entries(colors)
+    .filter(([, value]) => typeof value !== 'string')
+    .map(([name, value]) => (
+      <ColorItem key={name} title={name} colors={value} />
+    ))}
+</ColorPalette>
+;
