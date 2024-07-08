@@ -94,6 +94,6 @@ export const LengthTooLong: Story = {
     expect(textArea).toHaveClass('ring-danger-500');
     expect(textArea).toHaveAttribute('aria-invalid', 'true');
     expect(count).toHaveTextContent(inputValue.length.toString());
-    expect(count).toHaveStyle({ color: 'rgb(237, 70, 86)' });
+    expect(count).toHaveStyle({ color: 'rgb(217, 37, 62)' });
   },
 };

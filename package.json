@@ -12,7 +12,8 @@
     "storybook": "storybook dev -p 6006",
     "test-storybook": "test-storybook",
     "build-storybook": "storybook build",
-    "prepare": "husky"
+    "prepare": "husky",
+    "chromatic": "npx chromatic --project-token=chpt_677ed1014255842"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
@@ -48,7 +49,7 @@
     "@typescript-eslint/parser": "7.12.0",
     "@vitejs/plugin-react": "4.3.0",
     "autoprefixer": "10.4.19",
-    "axe-playwright": "2.0.1",
+    "axe-playwright": "^2.0.1",
     "class-variance-authority": "0.7.0",
     "clsx": "2.1.1",
     "eslint": "8.57.0",
